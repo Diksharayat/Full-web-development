@@ -1,0 +1,13 @@
+long stockmax(vector<int> prices) {
+    int n=prices.size();
+    long profit=0;
+    int peak=0;
+    for (int i=n-1;i>-1 ; i--) {
+       if (prices[i]>=peak) {
+          peak=prices[i];
+       }
+       profit=profit+peak-prices[i];
+    }
+   
+return profit;
+}

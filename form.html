@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>form</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<style>
+
+.abc{
+background-color:cyan;
+}
+</style>
+
+</head>
+
+<div class="abc container-fluid">
+<h1>Form</h1>
+
+<form>
+<label for="name">Name:</label>
+<input type="text" id="name" placeholder="enter your name" value="riya"><br>
+<label for="email">Email:</label>
+<input type="email" id="email" placeholder="enter your email"/><br>
+<label for="password">Password:</label>
+<input type="password" id="password" placeholder="enter your password" maxlength="10"><br>
+<label for="number">Number:</label>
+<input type="tel" id="number" placeholder="enter your number" maxlength="12" ><br>
+<label >Gender</label>
+<label for="male"> Male <input name="gender" type="radio" id="male"></label>
+
+<label for="female"> Female: <input name="gender" type="radio" id="female"/>
+</label>
+<br>
+<label for="address"> Address:<textarea></textarea></label>
+<br>
+<label >Hobbies</label>
+<label for="drawing"> Male <input name="hobbies" type="checkbox" id="drawing"/></label>
+
+<label for="singing"> Female: <input name="hobbies" type="checkbox" id="singing"/>
+</label>
+<br>
+<button type="button">submit</button><br>
+<input type="button" value="click"/>
+<input type="reset" value="reset"/>
+<br>
+<label for="cars"> choose a car:
+<select>
+<option id="cars"> car </option>
+<option id="cars"> scooter</option>
+<option id="cars">bullet</option>
+<option id="cars">Thar</option>
+</label>
+</select>
+</form>	
+<br>
+\\we use "name" for radio button and keep its value same
+ so that only one box is clickable.\\
+
+
+</div>
+
+</html>
